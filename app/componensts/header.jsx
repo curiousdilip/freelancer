@@ -1,30 +1,67 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+"use client"
+import Link from 'next/link';
+import { useState } from 'react';
+import styles from './header.module.scss';
+import Image from 'next/image';
 
-export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <header>
-      <div className="container">
-        <Link href="/" className="logo">
-          <Image src="/img/logo.svg" alt="" width={208} height={56} />
+    <nav className={styles.navbar}>
+      <div className={styles.navbarBrand}>
+        <Link href="/">
+          <Image src="/img/logo.svg" width={208} height={56} />
         </Link>
-        <nav className={menuOpen ? "open" : ""}>
-          <Link href="/blog">Blog</Link>
-          <Link href="/works">Works</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-
-        <button
-          className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <div className="bar"></div>
+        <button className={styles.toggleButton} onClick={toggleMenu}>
+          {isOpen ? 'Close' : 'Menu'}
         </button>
       </div>
-    </header>
+      <ul className={`${styles.navLinks} ${isOpen ? styles.show : ''}`}>
+        <li>
+          <Link href="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            Process
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            Blog
+          </Link>
+        </li>
+        <li>
+          <Link href="#">
+            Services
+          </Link>
+        </li>
+
+        <Link href="#" className={styles.primaryBtn}>
+          Contact
+        </Link>
+
+      </ul>
+
+
+    </nav>
   );
-}
+};
+
+export default Navbar;

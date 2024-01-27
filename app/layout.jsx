@@ -1,4 +1,5 @@
 import "./global.scss";
+import { Work_Sans } from 'next/font/google'
 export const metadata = {
   title: "Dilip Kr. Maurya",
   description:

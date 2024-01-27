@@ -1,12 +1,15 @@
 import Header from "./componensts/header";
-
+import styles from "./home.module.scss"
 export default function Home() {
   return (
     <>
       <Header />
-      <img src="/img/logo.svg" alt="" />
+
       <main>
-        <section id="hero"></section>
+        <section id="hero">
+          <div className={styles.container}></div>
+
+        </section>
         <section id="about"></section>
         <section id="services"></section>
         <section id="process"></section>
