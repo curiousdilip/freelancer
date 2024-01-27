@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navbarBrand}>
         <Link href="/">
-          <Image src="/img/logo.svg" width={208} height={56} />
+          <Image src="/img/favicon.svg" width={56} height={56} alt='Logo' priority />
         </Link>
         <button className={styles.toggleButton} onClick={toggleMenu}>
           {isOpen ? 'Close' : 'Menu'}

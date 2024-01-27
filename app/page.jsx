@@ -1,5 +1,7 @@
+import Link from "next/link";
 import Header from "./componensts/header";
 import styles from "./home.module.scss"
+import Image from "next/image";
 export default function Home() {
   return (
     <>
@@ -7,7 +9,31 @@ export default function Home() {
 
       <main>
         <section id="hero">
-          <div className={styles.container}></div>
+          <div className={styles.container}>
+            <div className={styles.row}>
+              <div className={styles.col}>
+                <div className={styles.content}>
+                  <h1>Hello, I'm <br />
+                    Dilip Kumar</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Magnam</span> officiis voluptates alias consequuntur totam cupiditate fugiat dolores recusandae corporis earum error autem eligendi, vitae expedita! Culpa consequatur ratione non dolorem.</p>
+                  <div className={styles.btn}>
+                    <Link href="#" className={styles.primaryBtn}>
+                      Contact
+                    </Link>
+                  </div>
+                </div>
+
+              </div>
+              <div className={styles.col}>
+
+                <div className={styles.imgContainer}>
+                  <Image src="/img/sample-img.jpeg" width={636} height={536} alt="sample image" />
+                </div>
+
+              </div>
+
+            </div>
+          </div>
 
         </section>
         <section id="about"></section>
