@@ -9,9 +9,17 @@ export const metadata = {
   },
 };
 
+const worksans = Work_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-worksans',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${worksans.variable
+      }`}>
       <body>{children}</body>
     </html>
   );

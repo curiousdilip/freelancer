@@ -6,9 +6,8 @@ export default function Home() {
   return (
     <>
       <Header />
-
       <main>
-        <section id="hero">
+        <section id={styles.hero}>
           <div className={styles.container}>
             <div className={styles.row}>
               <div className={styles.col}>

@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <ul className={`${styles.navLinks} ${isOpen ? styles.show : ''}`}>
         <li>
-          <Link href="/">
+          <Link href="#hero">
             Home
           </Link>
         </li>
