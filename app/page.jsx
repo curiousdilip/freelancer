@@ -45,12 +45,16 @@ export default function Home() {
               </div>
               <div className={styles.col}>
                 <div className={styles.imgContainer}>
-                  <Image
+                  {/* <Image
                     src="/img/sample-img.jpeg"
                     width={636}
                     height={536}
                     alt="sample image"
-                  />
+                  /> */}
+                  <img
+                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />{" "}
                 </div>
               </div>
             </div>

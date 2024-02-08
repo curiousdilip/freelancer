@@ -5,14 +5,23 @@ main {
       z-index: 30;
       max-width: 1230px;
       margin: 0 auto;
-
+      @media (max-width: 768px) {
+        padding: 40px 20px;
+      }
       .row {
+        @media (max-width: 768px) {
+          flex-direction: column;
+          min-height: auto;
+        }
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 90vh;
         .col {
           width: 48%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
 
           .content {
             h1 {
@@ -20,6 +29,10 @@ main {
               font-weight: 600;
               line-height: 84px;
               color: #132238;
+              @media (max-width: 768px) {
+                font-size: 50px;
+                line-height: 50px;
+              }
             }
 
             p {
@@ -43,6 +56,9 @@ main {
             bottom: 0;
             border-radius: 6px;
             border: 1px solid white;
+            @media (max-width: 768px) {
+              margin-top: 20px;
+            }
 
             .stat {
               padding: 12px 17px;
@@ -50,6 +66,10 @@ main {
               text-align: center;
               width: 200px;
               transition: all 0.3s;
+              @media (max-width: 768px) {
+                padding: 12px;
+              }
+
               // border-radius: 6px;
 
               h3 {
@@ -57,10 +77,16 @@ main {
                 font-weight: 500;
                 color: #424e60;
                 margin-bottom: 8px;
+                @media (max-width: 768px) {
+                  font-size: 28px;
+                }
               }
 
               p {
                 color: #697484;
+                @media (max-width: 768px) {
+                  font-size: 10px;
+                }
               }
             }
 
@@ -95,6 +121,11 @@ main {
             box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
             border-radius: 25px;
             overflow: hidden;
+            @media (max-width: 768px) {
+              margin-top: 20px;
+              width: 100%;
+              height: 350px;
+            }
 
             img {
               object-fit: cover;
@@ -110,16 +141,23 @@ main {
     }
   }
 }
-
 #about {
   padding: 120px 0;
   background-color: rgba(255, 223, 168, 0.2);
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
   .container {
     z-index: 30;
     max-width: 1230px;
     margin: 0 auto;
 
     .aboutBox {
+      @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 20px;
+      }
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -130,6 +168,10 @@ main {
 
       .imgContainer {
         position: relative;
+        @media (max-width: 768px) {
+          width: 100%;
+          height: 300px;
+        }
         width: 45%;
         height: 468px;
 
@@ -146,6 +188,9 @@ main {
           width: 100%;
 
           .box {
+            @media (max-width: 768px) {
+              width: 92%;
+            }
             padding: 12px;
             margin: 0 auto;
             width: 57%;
@@ -172,12 +217,20 @@ main {
   }
 
   .content {
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 50px;
+    }
     width: 50%;
     h2 {
       font-size: 38px;
       font-weight: 600;
       margin-bottom: 32px;
       color: #132238;
+
+      @media (max-width: 768px) {
+        font-size: 28px;
+      }
     }
 
     p {
@@ -194,8 +247,11 @@ main {
         padding: 12px 24px;
         border-radius: 4px;
         background-color: #a53dff;
-        border: none;
+        border: 1px solid #a53dff;
         margin-right: 16px;
+        @media (max-width: 768px) {
+          padding: 12px;
+        }
 
         a {
           text-decoration: none;
