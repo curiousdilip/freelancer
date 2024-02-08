@@ -111,6 +111,115 @@ main {
   }
 }
 
+#about {
+  padding: 120px 0;
+  background-color: rgba(255, 223, 168, 0.2);
+  .container {
+    z-index: 30;
+    max-width: 1230px;
+    margin: 0 auto;
+
+    .aboutBox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 112px;
+      border-radius: 16px;
+      background-color: #fff;
+      box-shadow: 0 36px 105px rgba(43, 56, 76, 0.1);
+
+      .imgContainer {
+        position: relative;
+        width: 45%;
+        height: 468px;
+
+        img {
+          border-radius: 10px;
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+        }
+
+        .social {
+          position: absolute;
+          bottom: -40px;
+          width: 100%;
+
+          .box {
+            padding: 12px;
+            margin: 0 auto;
+            width: 57%;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 12px 64px 0 rgba(127, 17, 224, 0.12);
+
+            a {
+              display: inline-block;
+              padding: 11px 15px;
+              color: #a53dff;
+              border-radius: 4px;
+            }
+
+            a:hover {
+              color: #fff;
+              background-color: #a53dff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 50%;
+    h2 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      color: #132238;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: #556070;
+    }
+
+    .ctaBtns {
+      display: block;
+      margin-top: 32px;
+
+      button {
+        padding: 12px 24px;
+        border-radius: 4px;
+        background-color: #a53dff;
+        border: none;
+        margin-right: 16px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+
+      button:last-child {
+        padding: 12px 24px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid #a53dff;
+        margin-right: 16px;
+
+        a {
+          font-weight: 500;
+          color: #a53dff;
+        }
+      }
+    }
+  }
+}
+
 .primaryBtn {
   display: inline-block;
   padding: 12px 24px;
