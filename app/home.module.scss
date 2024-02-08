@@ -1,81 +1,123 @@
 main {
-    #hero {
-        background-color: rgba(218, 77, 241, 0.1);
-        filter: blur(900);
+  #hero {
+    background-color: rgba(196, 245, 233, 0.7);
+    .container {
+      z-index: 30;
+      max-width: 1230px;
+      margin: 0 auto;
 
-        .container {
-            height: 100dvh;
-            max-width: 1230px;
-            margin: 0 auto;
-            position: relative;
-            padding: 1.25rem;
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 90vh;
+        .col {
+          width: 48%;
 
-            .row {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .col {
-                    width: 48%;
-
-                    .content {
-                        h1 {
-                            font-size: 72px;
-                            font-weight: 700;
-                            line-height: 84px;
-                            color: #132238;
-                        }
-
-                        p {
-                            padding: 1.5rem 0;
-                            font-size: 18px;
-                            line-height: 24px;
-                            color: #556070;
-
-                            span {
-                                color: #132238;
-                                border-bottom: 6px solid #FFC8C8;
-                            }
-                        }
-
-
-
-
-                    }
-
-                    .imgContainer {
-                        text-align: right;
-                        width: 90%;
-                        box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
-                        border-radius: 25px;
-                        overflow: hidden;
-
-                        img {
-                            object-fit: cover;
-                        }
-                    }
-                }
-
-                .col:nth-child(2) {
-                    display: flex;
-                    justify-content: flex-end;
-                }
+          .content {
+            h1 {
+              font-size: 72px;
+              font-weight: 600;
+              line-height: 84px;
+              color: #132238;
             }
 
+            p {
+              padding: 1.5rem 0;
+              font-size: 18px;
+              line-height: 24px;
+              color: #556070;
 
+              span {
+                color: #132238;
+                border-bottom: 6px solid #ffc8c8;
+              }
+            }
+          }
+
+          .stats {
+            margin-top: 80px;
+            background-color: rgba(237, 216, 255, 0.5);
+            display: flex;
+            // position: absolute;
+            bottom: 0;
+            border-radius: 6px;
+            border: 1px solid white;
+
+            .stat {
+              padding: 12px 17px;
+              border-right: 2px solid white;
+              text-align: center;
+              width: 200px;
+              transition: all 0.3s;
+              // border-radius: 6px;
+
+              h3 {
+                font-size: 32px;
+                font-weight: 500;
+                color: #424e60;
+                margin-bottom: 8px;
+              }
+
+              p {
+                color: #697484;
+              }
+            }
+
+            .stat:hover:first-child {
+              border-top-left-radius: 6px;
+              border-bottom-left-radius: 6px;
+            }
+            .stat:last-child {
+              border-right: none;
+              border-top-right-radius: 6px;
+              border-bottom-right-radius: 6px;
+            }
+
+            .stat:hover {
+              // border-radius: 6px;
+              background-color: #a53dff;
+
+              h3,
+              p {
+                color: #fff;
+              }
+            }
+
+            .box:last-child {
+              border-right: none;
+            }
+          }
+
+          .imgContainer {
+            text-align: right;
+            width: 90%;
+            box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
+            border-radius: 25px;
+            overflow: hidden;
+
+            img {
+              object-fit: cover;
+            }
+          }
         }
+
+        .col:nth-child(2) {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
     }
+  }
 }
 
-
 .primaryBtn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #A53DFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 600;
-
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #a53dff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
 }
