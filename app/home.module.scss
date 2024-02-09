@@ -129,6 +129,7 @@ main {
 
             img {
               object-fit: cover;
+              height: 536px;
             }
           }
         }
@@ -271,6 +272,77 @@ main {
           font-weight: 500;
           color: #a53dff;
         }
+      }
+    }
+  }
+}
+
+#process {
+  height: auto;
+  padding: 140px 0;
+
+  background-color: #f0f1f3;
+
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .content {
+      width: 40%;
+      h3 {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 24px;
+        color: #132238;
+      }
+
+      p {
+        font-size: 18px;
+        color: #697484;
+        margin-bottom: 16px;
+      }
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 24px;
+      width: 50%;
+
+      .step {
+        padding: 32px;
+        background-color: #fff;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+
+        svg {
+          font-size: 32px;
+          width: 72px;
+          height: 72px;
+          background-color: #a53dff;
+          padding: 20px;
+          display: flex;
+          border-radius: 6px;
+          color: #fff;
+        }
+
+        h4 {
+          margin-top: 32px;
+          margin-bottom: 12px;
+          color: #132238;
+          font-size: 20px;
+          font-weight: 600;
+        }
+
+        p {
+          color: #556070;
+        }
+      }
+
+      .step:hover {
+        box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
       }
     }
   }

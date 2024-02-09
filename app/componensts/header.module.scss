@@ -19,18 +19,12 @@
     padding: 12px 24px;
   }
 
-
-
   .navLinks {
     display: flex;
     list-style-type: none;
 
-
-
     li {
       padding: 12px 24px;
-
-
 
       a {
         text-decoration: none;
@@ -42,12 +36,11 @@
     .primaryBtn {
       display: block;
       padding: 12px 24px;
-      background-color: #A53DFF;
+      background-color: #a53dff;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
       font-weight: 500;
-
     }
   }
 
@@ -75,11 +68,10 @@
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-
       }
 
       li {
-        margin: .5rem 0;
+        margin: 0.5rem 0;
       }
 
       a {
