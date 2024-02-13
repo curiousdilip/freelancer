@@ -1,24 +1,30 @@
 main {
-  #hero {
+  .hero {
     background-color: rgba(196, 245, 233, 0.7);
+
     .container {
       z-index: 30;
       max-width: 1230px;
       margin: 0 auto;
+
       @media (max-width: 768px) {
         padding: 40px 20px;
       }
+
       .row {
         @media (max-width: 768px) {
           flex-direction: column;
           min-height: auto;
         }
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 90vh;
+
         .col {
           width: 48%;
+
           @media (max-width: 768px) {
             width: 100%;
           }
@@ -29,6 +35,7 @@ main {
               font-weight: 600;
               line-height: 84px;
               color: #132238;
+
               @media (max-width: 768px) {
                 font-size: 50px;
                 line-height: 50px;
@@ -56,6 +63,7 @@ main {
             bottom: 0;
             border-radius: 6px;
             border: 1px solid white;
+
             @media (max-width: 768px) {
               margin-top: 20px;
             }
@@ -66,6 +74,7 @@ main {
               text-align: center;
               width: 200px;
               transition: all 0.3s;
+
               @media (max-width: 768px) {
                 padding: 12px;
               }
@@ -77,6 +86,7 @@ main {
                 font-weight: 500;
                 color: #424e60;
                 margin-bottom: 8px;
+
                 @media (max-width: 768px) {
                   font-size: 28px;
                 }
@@ -84,6 +94,7 @@ main {
 
               p {
                 color: #697484;
+
                 @media (max-width: 768px) {
                   font-size: 10px;
                 }
@@ -94,6 +105,7 @@ main {
               border-top-left-radius: 6px;
               border-bottom-left-radius: 6px;
             }
+
             .stat:last-child {
               border-right: none;
               border-top-right-radius: 6px;
@@ -121,6 +133,7 @@ main {
             box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
             border-radius: 25px;
             overflow: hidden;
+
             @media (max-width: 768px) {
               margin-top: 20px;
               width: 100%;
@@ -142,13 +155,15 @@ main {
     }
   }
 }
-#about {
+
+.about {
   padding: 120px 0;
   background-color: rgba(255, 223, 168, 0.2);
 
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
+
   .container {
     z-index: 30;
     max-width: 1230px;
@@ -159,6 +174,7 @@ main {
         flex-direction: column;
         padding: 20px;
       }
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -169,10 +185,12 @@ main {
 
       .imgContainer {
         position: relative;
+
         @media (max-width: 768px) {
           width: 100%;
           height: 300px;
         }
+
         width: 45%;
         height: 468px;
 
@@ -192,6 +210,7 @@ main {
             @media (max-width: 768px) {
               width: 92%;
             }
+
             padding: 12px;
             margin: 0 auto;
             width: 57%;
@@ -222,7 +241,9 @@ main {
       width: 100%;
       margin-top: 50px;
     }
+
     width: 50%;
+
     h2 {
       font-size: 38px;
       font-weight: 600;
@@ -250,6 +271,7 @@ main {
         background-color: #a53dff;
         border: 1px solid #a53dff;
         margin-right: 16px;
+
         @media (max-width: 768px) {
           padding: 12px;
         }
@@ -277,10 +299,9 @@ main {
   }
 }
 
-#process {
+.process {
   height: auto;
   padding: 140px 0;
-
   background-color: #f0f1f3;
 
   .container {
@@ -289,8 +310,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .content {
       width: 40%;
+
       h3 {
         font-size: 48px;
         font-weight: 600;
@@ -326,6 +349,7 @@ main {
           display: flex;
           border-radius: 6px;
           color: #fff;
+          border: 1px solid #a53dff;
         }
 
         h4 {
@@ -343,6 +367,19 @@ main {
 
       .step:hover {
         box-shadow: 32px 32px 124px rgba(43, 56, 76, 0.1);
+        background-color: #a53dff;
+
+        svg {
+          border: 1px solid white;
+        }
+
+        h4 {
+          color: #fff;
+        }
+
+        p {
+          color: #fff;
+        }
       }
     }
   }

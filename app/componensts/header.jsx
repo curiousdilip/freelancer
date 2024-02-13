@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -28,12 +27,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="#about">
             About
           </Link>
         </li>
         <li>
-          <Link href="#">
+          <Link href="#process">
             Process
           </Link>
         </li>

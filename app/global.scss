@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: var(--font-worksans), sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
