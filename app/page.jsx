@@ -315,7 +315,22 @@ export default function Home() {
                 </div>
 
 
-              </div><div className={styles.project}>
+              </div>
+              <div className={styles.project}>
+                <div className={styles.imgContainer}>
+                  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                </div>
+                <div className={styles.content}>
+                  <p className={styles.type}>UI UX </p>
+                  <h4>Somthing</h4>
+                  <div className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quas dolores quidem dolorem nostrum expedita autem, est rerum voluptate alias ex facere repellat esse eos ipsam exercitationem iusto repudiandae laudantium.</div>
+                  <button><a href="#">Case Study</a></button>
+
+                </div>
+
+
+              </div>
+              <div className={styles.project}>
                 <div className={styles.imgContainer}>
                   <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                 </div>
@@ -331,11 +346,55 @@ export default function Home() {
               </div>
 
             </div>
-
+            <div className={styles.more}>
+              <button><a href="#">More Projects</a></button>
+            </div>
 
           </div>
         </section>
-      </main>
+
+        <section className={styles.cta} id="cta">
+          <div className={styles.container}>
+            <div className={styles.content}>
+              <h2>Do you have Project Idia?<br />
+                Let's discuss your project!</h2>
+              <p>There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration.</p>
+              <button><a href="#">Let's Work Together</a> <i class="bi bi-arrow-right-short"></i></button>
+
+            </div>
+          </div>
+
+        </section >
+        <section className={styles.blogss} id="blogs">
+          <div className={styles.container}>
+            <div className={styles.heading}>
+              <h3>Blog</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea magni aut quo iusto itaque, cum rem ullam! Sed similique, voluptas hic dolorem fugit dolorum illum obcaecati qui illo! Voluptates, dignissimos.</p>
+
+            </div>
+            <div className={styles.blogs}>
+              <div className={styles.blog}>
+                <div className={styles.imgContainer}>
+                  <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="" />
+                </div>
+                <div className={styles.content}>
+                  <p className={styles.metadata}>
+                    22 Oct, 2020
+                  </p>
+                  <p className={styles.description}>
+                    Lorem ipsum dolor sit consea. Nulla purus arcu
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main >
     </>
   );
 }
