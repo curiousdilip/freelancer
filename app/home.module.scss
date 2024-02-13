@@ -304,6 +304,10 @@ main {
   padding: 140px 0;
   background-color: #f0f1f3;
 
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+
   .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -311,8 +315,17 @@ main {
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+
     .content {
       width: 40%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
 
       h3 {
         font-size: 48px;
@@ -333,6 +346,12 @@ main {
       grid-template-columns: auto auto;
       gap: 24px;
       width: 50%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        grid-template-columns: auto;
+
+      }
 
       .step {
         padding: 32px;
@@ -384,6 +403,119 @@ main {
     }
   }
 }
+
+.portfolio {
+  padding: 100px 0;
+
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+
+  }
+
+  .heading {
+    text-align: center;
+
+    h3 {
+      margin-bottom: 24px;
+      color: #132238;
+      font-size: 48px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #556070;
+      font-size: 18px;
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 24px;
+
+    .project {
+      overflow: hidden;
+      // width: 424px;
+      border-radius: 8px;
+
+      .imgContainer {
+        height: 248px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .content {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 32px;
+        border: 1px solid #E6E8EB;
+
+        .type {
+          font-size: 12px;
+          font-weight: 500px;
+          color: #87909D;
+        }
+
+        h4 {
+          margin-top: 4px;
+          margin-bottom: 12px;
+          color: #132238;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .description {
+          font-size: 14px;
+          color: #556070;
+        }
+
+
+        button {
+          padding: 12px 24px;
+          border-radius: 4px;
+          background-color: #fff;
+          margin-top: 20px;
+          border: 1px solid #A53DFF;
+
+          a {
+            font-weight: 500;
+            color: #A53DFF;
+          }
+
+          i {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .more {
+    text-align: center;
+
+    button {
+      padding: 12px 24px;
+      border-radius: 4px;
+      background-color: #A53DFF;
+      border: none;
+      margin-right: 16px;
+
+
+      a {
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+}
+
 
 .primaryBtn {
   display: inline-block;
