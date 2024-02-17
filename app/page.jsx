@@ -559,11 +559,43 @@ export default function Home() {
             <div className={styles.form}>
               <p>There are many variations of passages of Lorem Ipsu available,
                 but the majority have suffered alte.</p>
+              <form>
+
+                <input type="text" id="name" name="name" placeholder="Name" /><br />        <input type="email" id="email" name="email" placeholder="Email" /><br />
+                <input type="text" id="location" name="location" placeholder="Location" /><br />
+                <div className={styles.bsub}>
+                  <input type="text" id="budget" name="budget" placeholder="Budget*" /><br /> <input type="text" id="subject" name="subject" placeholder="Subject*" /><br />
+                </div>
+                <textarea name="message" id="message" cols="30" rows="3" placeholder="Message"></textarea>
+                <input type="button" value="Submit" /><br />
+              </form>
             </div>
 
           </div>
 
         </section>
+        <footer className={styles.footer}>
+          <div className={styles.container}>
+            <div className={styles.footerBox}>
+              <div className={styles.logo}>
+                <img src="/img/logo.svg" alt="" />
+              </div>
+              <div className={styles.nav}>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                </ul>
+              </div>
+              <div className={styles.copyright}>
+                <p>Copyright @ Dilip Maurya</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main >
     </>
   );
