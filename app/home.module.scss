@@ -331,6 +331,7 @@ main {
         font-weight: 600;
         margin-bottom: 24px;
         color: #132238;
+
         @media (max-width: 768px) {
           font-size: 24px;
           margin-bottom: 12px;
@@ -360,6 +361,7 @@ main {
         background-color: #fff;
         border-radius: 12px;
         transition: all 0.3s ease;
+
         @media (max-width: 768px) {
           display: flex;
           align-items: center;
@@ -400,7 +402,7 @@ main {
           border: 1px solid white;
         }
 
-        h4 {
+        h3 {
           color: #fff;
         }
 
@@ -432,6 +434,7 @@ main {
       color: #132238;
       font-size: 48px;
       font-weight: 600;
+
       @media (max-width: 768px) {
         font-size: 24px;
         margin-bottom: 12px;
@@ -627,6 +630,7 @@ main {
         color: #132238;
         font-size: 48px;
         font-weight: 600;
+
         @media (max-width: 768px) {
           font-size: 24px;
           margin-bottom: 12px;
@@ -665,6 +669,7 @@ main {
           .metadata {
             color: #87909d;
             font-size: 14px;
+
             @media (max-width: 768px) {
               margin-bottom: 10px;
             }
@@ -687,9 +692,11 @@ main {
 
 .routine {
   padding: 100px 0;
+
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
+
   background-color: #f0f1f3;
 
   .container {
@@ -698,12 +705,14 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     @media (max-width: 768px) {
       display: block;
     }
 
     .content {
       width: 45%;
+
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -713,6 +722,7 @@ main {
         color: #132238;
         font-size: 48px;
         font-weight: 600;
+
         @media (max-width: 768px) {
           font-size: 24px;
           margin-bottom: 12px;
@@ -733,6 +743,7 @@ main {
 
     .works {
       width: 48%;
+
       @media (max-width: 768px) {
         margin-top: 50px;
         width: 100%;
@@ -773,9 +784,11 @@ main {
 
 .clients {
   padding: 100px 0;
+
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
+
   .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -788,6 +801,7 @@ main {
         color: #132238;
         font-size: 48px;
         font-weight: 600;
+
         @media (max-width: 768px) {
           font-size: 24px;
           margin-bottom: 12px;
@@ -807,6 +821,7 @@ main {
       display: flex;
       justify-content: center;
       gap: 24px;
+
       @media (max-width: 768px) {
         display: block;
         text-align: center;
@@ -814,6 +829,7 @@ main {
 
       img {
         padding: 80px 0;
+
         @media (max-width: 768px) {
           padding: 20px;
         }
@@ -826,6 +842,7 @@ main {
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
+
   padding: 100px 0;
   background-color: rgba($color: #ffeac6, $alpha: 0.2);
 
@@ -841,6 +858,7 @@ main {
         color: #132238;
         font-size: 48px;
         font-weight: 600;
+
         @media (max-width: 768px) {
           font-size: 24px;
           margin-bottom: 12px;
@@ -887,6 +905,7 @@ main {
   padding-top: 100px;
   margin-bottom: -60px;
   z-index: 30;
+
   @media (max-width: 768px) {
     padding: 40px 20px;
   }
@@ -901,6 +920,7 @@ main {
     justify-content: space-between;
     padding: 88px;
     border-radius: 15px;
+
     @media (max-width: 768px) {
       display: block;
       padding: 20px;
@@ -908,6 +928,7 @@ main {
 
     .details {
       width: 45%;
+
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -940,14 +961,17 @@ main {
           align-items: center;
 
           transition: 0.3s all ease-in-out;
+
           @media (max-width: 768px) {
             padding: 10px;
           }
 
           &:hover {
             box-shadow: 0px 12px 64px 0 rgba($color: #1c1919, $alpha: 0.12);
+
             .box {
               background-color: #a53dff;
+
               svg {
                 fill: #fff;
               }
@@ -980,6 +1004,7 @@ main {
             align-items: flex-start;
             height: 50px;
             flex-direction: column;
+
             @media (max-width: 768px) {
               height: auto;
             }
@@ -992,6 +1017,7 @@ main {
             h3 {
               color: #132238;
               font-weight: 500;
+
               @media (max-width: 768px) {
                 font-size: 14px;
               }
@@ -1038,6 +1064,7 @@ main {
 
         input {
           transition: 0.3s all ease-in-out;
+
           &::placeholder {
             font-size: 18px;
             color: #697484;
@@ -1072,6 +1099,7 @@ main {
           padding: 12px 24px;
           margin-top: 50px;
           border-radius: 4px;
+
           @media (max-width: 768px) {
             font-size: 24px;
             margin-top: 24px;
@@ -1112,6 +1140,7 @@ main {
             font-size: 18px;
             color: #697484;
           }
+
           &:focus::placeholder {
             color: #a53dff;
           }
@@ -1133,6 +1162,7 @@ main {
   padding-bottom: 50px;
 
   background-color: #2b384c;
+
   @media (max-width: 768px) {
     padding: 80px 20px;
   }
@@ -1145,6 +1175,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       @media (max-width: 768px) {
         display: block;
         text-align: center;
@@ -1156,6 +1187,7 @@ main {
         ul {
           list-style-type: none;
           display: flex;
+
           @media (max-width: 768px) {
             display: block;
           }
