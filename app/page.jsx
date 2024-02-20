@@ -172,7 +172,7 @@ export default function Home() {
         <section className={styles.process} id="process">
           <div className={styles.container}>
             <div className={styles.content}>
-              <h3>Work Process</h3>
+              <h2>Work Process</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                 purus arcu, varius eget velit non, laoreet imperdiet orci.
@@ -194,7 +194,7 @@ export default function Home() {
                   <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
                   <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
                 </svg>
-                <h4>1. Research</h4>
+                <h3>1. Research</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   purus arcu.
@@ -212,7 +212,7 @@ export default function Home() {
                     d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
                   />
                 </svg>
-                <h4>2. Analyze</h4>
+                <h3>2. Analyze</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   purus arcu.
@@ -227,7 +227,7 @@ export default function Home() {
                 >
                   <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
                 </svg>
-                <h4>3. Design</h4>
+                <h3>3. Design</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   purus arcu.
@@ -244,7 +244,7 @@ export default function Home() {
                 >
                   <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5" />
                 </svg>
-                <h4>4. Launch</h4>
+                <h3>4. Launch</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
                   purus arcu.
@@ -256,7 +256,7 @@ export default function Home() {
         <section className={styles.portfolio} id="portfolio">
           <div className={styles.container}>
             <div className={styles.heading}>
-              <h3>Portfolio</h3>
+              <h2>Portfolio</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 magni aut quo iusto itaque, cum rem ullam! Sed similique,
@@ -274,7 +274,7 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -295,7 +295,8 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
+
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -316,7 +317,8 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
+
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -337,7 +339,8 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
+
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -358,7 +361,8 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
+
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -379,7 +383,8 @@ export default function Home() {
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>UI UX </p>
-                  <h4>Somthing</h4>
+                  <h3>Somthing</h3>
+
                   <div className={styles.description}>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Doloribus quas dolores quidem dolorem nostrum expedita
@@ -422,7 +427,7 @@ export default function Home() {
         <section className={styles.blogss} id="blogs">
           <div className={styles.container}>
             <div className={styles.heading}>
-              <h3>Blog</h3>
+              <h2>Blog</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
                 magni aut quo iusto itaque, cum rem ullam! Sed similique,
@@ -437,7 +442,7 @@ export default function Home() {
         <section className={styles.routine} id="routine">
           <div className={styles.container}>
             <div className={styles.content}>
-              <h3>What I do?</h3>
+              <h2>What I do?</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis, earum. Possimus magnam quae nobis expedita iure,
@@ -458,7 +463,7 @@ export default function Home() {
             </div>
             <div className={styles.works}>
               <div className={styles.work}>
-                <h4>User Experience (UX)</h4>
+                <h3>User Experience (UX)</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsum ab explicabo libero voluptas cumque temporibus
@@ -467,7 +472,7 @@ export default function Home() {
                 </p>
               </div>
               <div className={styles.work}>
-                <h4>User Experience (UX)</h4>
+                <h3>User Experience (UX)</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsum ab explicabo libero voluptas cumque temporibus
@@ -476,7 +481,7 @@ export default function Home() {
                 </p>
               </div>{" "}
               <div className={styles.work}>
-                <h4>User Experience (UX)</h4>
+                <h3>User Experience (UX)</h3>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Ipsum ab explicabo libero voluptas cumque temporibus
@@ -490,7 +495,7 @@ export default function Home() {
         <section className={styles.clients} id="client">
           <div className={styles.container}>
             <div className={styles.heading}>
-              <h3>Happy Clients</h3>
+              <h2>Happy Clients</h2>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration.
@@ -508,7 +513,7 @@ export default function Home() {
         <section className={styles.testimonial} id="testimonial">
           <div className={styles.container}>
             <div className={styles.heading}>
-              <h3>Testimonial</h3>
+              <h2>Testimonial</h2>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration.
@@ -520,7 +525,7 @@ export default function Home() {
         <section className={styles.contact} id="contact">
           <div className={styles.container}>
             <div className={styles.details}>
-              <h4>Contact Us</h4>
+              <h2>Contact Us</h2>
               <p>Let’s discuss your project</p>
               <div className={styles.iconDetail}>
                 <div className={styles.icon}>
@@ -539,7 +544,7 @@ export default function Home() {
                   </div>
                   <div className={styles.detail}>
                     <p>Phone:</p>
-                    <h5>+91 98997 42615</h5>
+                    <h3>+91 98997 42615</h3>
                   </div>
                 </div>{" "}
                 <div className={styles.icon}>
@@ -557,7 +562,7 @@ export default function Home() {
                   </div>
                   <div className={styles.detail}>
                     <p>Email:</p>
-                    <h5>contact@dilipmaurya.in</h5>
+                    <h3>contact@dilipmaurya.in</h3>
                   </div>
                 </div>
                 <div className={styles.icon}>
@@ -576,7 +581,7 @@ export default function Home() {
                   </div>
                   <div className={styles.detail}>
                     <p>Address:</p>
-                    <h5>New Delhi, India</h5>
+                    <h3>New Delhi, India</h3>
                   </div>
                 </div>
               </div>
@@ -710,44 +715,44 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className={styles.footer}>
-          <div className={styles.container}>
-            <div className={styles.footerBox}>
-              <div className={styles.logo}>
-                <a href="/">
-                  {" "}
-                  <img src="/img/logo-white.svg" alt="" />
-                </a>
-              </div>
-              <div className={styles.nav}>
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                </ul>
-              </div>
-              <div className={styles.copyright}>
-                <p>Copyright @ Dilip Maurya</p>
-              </div>
+      </main>
+      <footer className={styles.footer}>
+        <div className={styles.container}>
+          <div className={styles.footerBox}>
+            <div className={styles.logo}>
+              <a href="/">
+                {" "}
+                <img src="/img/logo-white.svg" alt="" />
+              </a>
+            </div>
+            <div className={styles.nav}>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.copyright}>
+              <p>Copyright @ Dilip Maurya</p>
             </div>
           </div>
-        </footer>
-      </main>
+        </div>
+      </footer>
     </>
   );
 }
