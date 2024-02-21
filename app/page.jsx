@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Header from "./componensts/header";
 import styles from "./home.module.scss";
 import Image from "next/image";
 import Blog from "./componensts/blog";
@@ -7,7 +6,6 @@ import Testimonial from "./componensts/testimonial";
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <section id="hero" className={styles.hero}>
           <div className={styles.container}>
@@ -330,76 +328,10 @@ export default function Home() {
                   </button>
                 </div>
               </div>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>UI UX </p>
-                  <h3>Somthing</h3>
-
-                  <div className={styles.description}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus quas dolores quidem dolorem nostrum expedita
-                    autem, est rerum voluptate alias ex facere repellat esse eos
-                    ipsam exercitationem iusto repudiandae laudantium.
-                  </div>
-                  <button>
-                    <a href="#">Case Study</a>
-                  </button>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>UI UX </p>
-                  <h3>Somthing</h3>
-
-                  <div className={styles.description}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus quas dolores quidem dolorem nostrum expedita
-                    autem, est rerum voluptate alias ex facere repellat esse eos
-                    ipsam exercitationem iusto repudiandae laudantium.
-                  </div>
-                  <button>
-                    <a href="#">Case Study</a>
-                  </button>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>UI UX </p>
-                  <h3>Somthing</h3>
-
-                  <div className={styles.description}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Doloribus quas dolores quidem dolorem nostrum expedita
-                    autem, est rerum voluptate alias ex facere repellat esse eos
-                    ipsam exercitationem iusto repudiandae laudantium.
-                  </div>
-                  <button>
-                    <a href="#">Case Study</a>
-                  </button>
-                </div>
-              </div>
             </div>
             <div className={styles.more}>
               <button>
-                <a href="#">More Projects</a>
+                <Link href="/projects">More Projects</Link>
               </button>
             </div>
           </div>
@@ -422,20 +354,6 @@ export default function Home() {
                 <i className="bi bi-arrow-right-short"></i>
               </button>
             </div>
-          </div>
-        </section>
-        <section className={styles.blogss} id="blogs">
-          <div className={styles.container}>
-            <div className={styles.heading}>
-              <h2>Blog</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
-                magni aut quo iusto itaque, cum rem ullam! Sed similique,
-                voluptas hic dolorem fugit dolorum illum obcaecati qui illo!
-                Voluptates, dignissimos.
-              </p>
-            </div>
-            <Blog />
           </div>
         </section>
 
@@ -716,43 +634,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className={styles.footer}>
-        <div className={styles.container}>
-          <div className={styles.footerBox}>
-            <div className={styles.logo}>
-              <a href="/">
-                {" "}
-                <img src="/img/logo-white.svg" alt="" />
-              </a>
-            </div>
-            <div className={styles.nav}>
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-              </ul>
-            </div>
-            <div className={styles.copyright}>
-              <p>Copyright @ Dilip Maurya</p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

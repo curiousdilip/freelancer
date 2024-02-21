@@ -1,5 +1,8 @@
 import "./global.scss";
 import { Work_Sans } from "next/font/google";
+import Header from "./componensts/header";
+import Footer from "./componensts/footer";
+
 export const metadata = {
   title: "Dilip Kr. Maurya",
   description:
@@ -19,7 +22,11 @@ const worksans = Work_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${worksans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

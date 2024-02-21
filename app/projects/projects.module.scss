@@ -1,0 +1,122 @@
+#projects {
+  padding: 100px 0;
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 24px;
+      color: #132238;
+      font-size: 48px;
+      font-weight: 600;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+    }
+
+    p {
+      color: #556070;
+      font-size: 18px;
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+      display: block;
+      margin: 40px 0;
+    }
+
+    .project {
+      overflow: hidden;
+      // width: 424px;
+      border-radius: 8px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+
+      .imgContainer {
+        @media (max-width: 768px) {
+          height: 220px;
+        }
+
+        height: 248px;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .content {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        padding: 32px;
+        border: 1px solid #e6e8eb;
+
+        @media (max-width: 768px) {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .type {
+          font-size: 12px;
+          font-weight: 500px;
+          color: #87909d;
+        }
+
+        h3 {
+          margin-top: 4px;
+          margin-bottom: 12px;
+          color: #132238;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .description {
+          font-size: 14px;
+          color: #556070;
+        }
+
+        button {
+          padding: 12px 24px;
+          border-radius: 4px;
+          background-color: #fff;
+          margin-top: 20px;
+          border: 1px solid #a53dff;
+
+          a {
+            font-weight: 500;
+            color: #a53dff;
+            text-decoration: none;
+          }
+
+          i {
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+  position: relative;
+  z-index: 12;
+  padding-top: 160px;
+  padding-bottom: 50px;
+
+  background-color: #2b384c;
+
+  @media (max-width: 768px) {
+    padding: 80px 20px;
+  }
+
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+
+    .footerBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        display: block;
+        text-align: center;
+      }
+
+      .nav {
+        display: flex;
+
+        ul {
+          list-style-type: none;
+          display: flex;
+
+          @media (max-width: 768px) {
+            display: block;
+          }
+
+          li {
+            padding: 12px;
+
+            a {
+              text-decoration: none;
+              color: #f0f1f3;
+            }
+          }
+        }
+      }
+
+      .copyright {
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
