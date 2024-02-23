@@ -168,13 +168,16 @@ export default function Home() {
             <div className={styles.content}>
               <h2>Work Process</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                purus arcu, varius eget velit non, laoreet imperdiet orci.
-                Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,
+                As a frontend web developer, I commence by researching the
+                project goals and target audience, analyzing competitor websites
+                for insights. Then, I collaborate with designers to
+                conceptualize and design user interfaces.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                purus arcu, varius eget velit non.
+                After coding and testing, I prepare for launch, ensuring
+                compatibility and responsiveness across platforms. Finally, I
+                deploy the website, ready for users to explore and interact
+                with.
               </p>
             </div>
             <div className={styles.steps}>
@@ -190,8 +193,9 @@ export default function Home() {
                 </svg>
                 <h3>1. Research</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  purus arcu.
+                  Gather data and insights to inform project decisions, ensuring
+                  alignment with client goals and user needs for effective
+                  development.
                 </p>
               </div>
               <div className={styles.step}>
@@ -208,8 +212,9 @@ export default function Home() {
                 </svg>
                 <h3>2. Analyze</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  purus arcu.
+                  Examine gathered data, identifying trends and patterns to
+                  inform strategic decisions and optimize the development
+                  process for success.
                 </p>
               </div>
               <div className={styles.step}>
@@ -223,8 +228,9 @@ export default function Home() {
                 </svg>
                 <h3>3. Design</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  purus arcu.
+                  Create visually appealing and intuitive user interfaces that
+                  prioritize user experience and effectively communicate the
+                  brand's message and functionality.
                 </p>
               </div>
               <div className={styles.step}>
@@ -240,8 +246,9 @@ export default function Home() {
                 </svg>
                 <h3>4. Launch</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  purus arcu.
+                  Deploy the finalized product, ensuring all components are
+                  functioning correctly and are optimized for performance, ready
+                  for public use.
                 </p>
               </div>
             </div>
@@ -252,10 +259,8 @@ export default function Home() {
             <div className={styles.heading}>
               <h2>Portfolio</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
-                magni aut quo iusto itaque, cum rem ullam! Sed similique,
-                voluptas hic dolorem fugit dolorum illum obcaecati qui illo!
-                Voluptates, dignissimos.
+                Bringing your vision to life with code that's both beautiful and
+                functional.
               </p>
             </div>
             <div className={styles.projects}>
@@ -349,16 +354,16 @@ export default function Home() {
           <div className={styles.container}>
             <div className={styles.content}>
               <h2>
-                Do you have Project Idia?
+                Do you have Project Idea?
                 <br />
                 Let's discuss your project!
               </h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration.
+                Explore ideas, discuss, and shape your project vision together
+                for success. Exciting possibilities await!
               </p>
               <button>
-                <a href="#">Let's Work Together</a>{" "}
+                <Link href="tel:+919899742615">Let's Work Together</Link>{" "}
                 <i className="bi bi-arrow-right-short"></i>
               </button>
             </div>
@@ -370,15 +375,16 @@ export default function Home() {
             <div className={styles.content}>
               <h2>What I do?</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, earum. Possimus magnam quae nobis expedita iure,
-                nesciunt nulla commodi rem quisquam harum molestiae ducimus
-                natus. Recusandae quas ullam perferendis ducimus. <br />
+                As a frontend web developer, I design and build the user
+                interface for websites and web applications. Using languages
+                such as HTML, CSS, and JavaScript, I craft visually appealing
+                and responsive layouts that ensure a smooth user experience
+                across different devices and browsers
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                accusamus quam numquam nesciunt provident, asperiores pariatur
-                quis, labore delectus, illo aperiam cupiditate expedita.
-                Voluptas, neque. Facilis repellendus laudantium nihil aliquid.
+                <br />I collaborate closely with designers and backend
+                developers to integrate frontend components seamlessly with
+                backend functionalities, creating cohesive and functional web
+                solutions.
               </p>
 
               <div className={styles.btn}>
@@ -389,30 +395,37 @@ export default function Home() {
             </div>
             <div className={styles.works}>
               <div className={styles.work}>
-                <h3>User Experience (UX)</h3>
+                <h3>Building user interfaces (UI)</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ipsum ab explicabo libero voluptas cumque temporibus
-                  repellendus laboriosam quam necessitatibus quibusdam sapiente
-                  veritatis omnis velit est optio vero, ipsam vel earum.
+                  Working closely with designers to translate visual concepts
+                  into functional code using HTML, CSS, and JavaScript. Creating
+                  responsive designs that adapt seamlessly across different
+                  devices (desktop, mobile, tablet). Implementing interactive
+                  elements like animations, transitions, and form validation.
+                  Ensuring accessibility for users with disabilities by
+                  following WCAG guidelines.
                 </p>
               </div>
               <div className={styles.work}>
-                <h3>User Experience (UX)</h3>
+                <h3>Working with various technologies</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ipsum ab explicabo libero voluptas cumque temporibus
-                  repellendus laboriosam quam necessitatibus quibusdam sapiente
-                  veritatis omnis velit est optio vero, ipsam vel earum.
+                  Mastering fundamental frontend languages like HTML, CSS, and
+                  JavaScript. Utilizing CSS frameworks or libraries like
+                  Bootstrap, Tailwind CSS, or Material-UI for faster
+                  development. Exploring advanced JavaScript technologies like
+                  React, Angular, or Vue.js for interactive and dynamic
+                  features. Staying updated with emerging frontend trends and
+                  tools.
                 </p>
               </div>{" "}
               <div className={styles.work}>
-                <h3>User Experience (UX)</h3>
+                <h3>Collaborating with others</h3>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ipsum ab explicabo libero voluptas cumque temporibus
-                  repellendus laboriosam quam necessitatibus quibusdam sapiente
-                  veritatis omnis velit est optio vero, ipsam vel earum.
+                  Working closely with back-end developers to ensure seamless
+                  integration between UI and server functionality. Communicating
+                  effectively with designers to understand their vision and
+                  translate it into code. Contributing to code reviews and
+                  collaborating on complex projects.
                 </p>
               </div>
             </div>
@@ -423,8 +436,8 @@ export default function Home() {
             <div className={styles.heading}>
               <h2>Happy Clients</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration.
+                Symbols of Success and Satisfaction with My Web Development
+                Services.
               </p>
             </div>
             <div className={styles.logos}>
@@ -441,8 +454,9 @@ export default function Home() {
             <div className={styles.heading}>
               <h2>Testimonial</h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration.
+                Discover my web development services through testimonials - Hear
+                firsthand accounts of client experiences and satisfaction with
+                my work!
               </p>
             </div>
             <Testimonial />
