@@ -207,13 +207,11 @@ main {
           width: 100%;
 
           .box {
-            @media (max-width: 768px) {
-              width: 92%;
-            }
+
 
             padding: 12px;
             margin: 0 auto;
-            width: 57%;
+            width: 208px;
             background-color: #fff;
             text-align: center;
             border-radius: 4px;
