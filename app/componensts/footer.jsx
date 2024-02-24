@@ -1,5 +1,5 @@
 import styles from "./footer.module.scss";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <>
@@ -15,22 +15,25 @@ export default function Footer() {
             <div className={styles.nav}>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#hero">Home</Link>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#about">About</Link>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#process">Process</Link>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#portfolio">Portfolio</Link>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#client">Clients</Link>
                 </li>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="#testimonial">Testimonials</Link>
+                </li>
+                <li>
+                  <Link href="#contact">Contact</Link>
                 </li>
               </ul>
             </div>

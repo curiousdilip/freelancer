@@ -37,16 +37,16 @@ const Navbar = () => {
           <Link href="#process">Process</Link>
         </li>
         <li>
-          <Link href="#">Portfolio</Link>
+          <Link href="#portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link href="#">Blog</Link>
+          <Link href="#client">Clients</Link>
         </li>
         <li>
-          <Link href="#">Services</Link>
+          <Link href="#testimonial">Testimonials</Link>
         </li>
 
-        <Link href="#" className={styles.primaryBtn}>
+        <Link href="#contact" className={styles.primaryBtn}>
           Contact
         </Link>
       </ul>
