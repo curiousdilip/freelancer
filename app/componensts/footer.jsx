@@ -15,7 +15,7 @@ export default function Footer() {
             <div className={styles.nav}>
               <ul>
                 <li>
-                  <Link href="#hero">Home</Link>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
                   <Link href="#about">About</Link>
@@ -38,7 +38,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={styles.copyright}>
-              <p>Copyright @ Dilip Maurya</p>
+              <p>Copyright 2024 © www.dilipmaurya.in</p>
             </div>
           </div>
         </div>

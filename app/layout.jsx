@@ -4,13 +4,50 @@ import Header from "./componensts/header";
 import Footer from "./componensts/footer";
 
 export const metadata = {
-  title: "Dilip Kr. Maurya",
-  description:
-    "A Web Developer making websites from scratch with provided designs",
-  icons: {
-    icon: "/img/favicon.svg",
+  title: {
+    default: "Dilip Kumar | Web Developer",
+    template: "%s | Dilip Kumar Maurya"
   },
-};
+  icons: {
+    icon: '/img/favicon.svg',
+  },
+  description: "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+  robots: "follow, index",
+  applicationName: 'Dilip Kumar ',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Dilipmaurya', 'curiousdilip', 'mauryaji'],
+  authors: [{ name: 'Dilip Kumar', url: 'https://www.dilipmaurya.in' }],
+  // colorScheme: 'black',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://www.dilipmaurya.in'),
+  alternates: {
+    canonical: 'https://www.dilipmaurya.in',
+    '/projects': 'https://www.dilipmaurya.in/projects',
+  },
+  openGraph: {
+    images: {
+      default: '/img/profilecardimg.jpeg',
+      template: '%s'
+    },
+    description: {
+      default: 'Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.',
+      template: "%s"
+    },
+    title: {
+      default: 'Dilip Kumar | Web Developer',
+      template: "%s | Dilip Kumar Maurya"
+    },
+    url: 'https://www.dilipmaurya.in',
+    siteName: 'Dilip Kumar | Web Developer',
+    locale: 'en_US',
+    type: 'website',
+  },
+
+}
 
 const worksans = Work_Sans({
   subsets: ["latin"],

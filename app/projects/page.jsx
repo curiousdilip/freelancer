@@ -1,5 +1,12 @@
 import styles from "./projects.module.scss";
-
+export const metadata = {
+  title: "Projects",
+  openGraph: {
+    title: "Projects",
+    description: "These are the Projects / Works that I was a part and i have developed some of them from scratch ",
+    images: '/img/profilecardimg.jpeg',
+  }
+};
 export default function projects() {
   return (
     <>
