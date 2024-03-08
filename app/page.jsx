@@ -451,7 +451,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.testimonial} id="testimonial">
+        {/* <section className={styles.testimonial} id="testimonial">
           <div className={styles.container}>
             <div className={styles.heading}>
               <h2>Testimonial</h2>
@@ -463,7 +463,7 @@ export default function Home() {
             </div>
             <Testimonial />
           </div>
-        </section>
+        </section> */}
         <section className={styles.contact} id="contact">
           <div className={styles.container}>
             <div className={styles.details}>
