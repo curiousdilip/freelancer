@@ -266,9 +266,11 @@ export default function Home() {
             <div className={styles.projects}>
               <div className={styles.project}>
                 <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                  <Image
+                    src="/img/projects/ramenpaul.png"
+                    alt="Ramen Sir Website"
+                    width={1920}
+                    height={1080}
                   />
                 </div>
                 <div className={styles.content}>
@@ -277,13 +279,10 @@ export default function Home() {
                   </p>
                   <h3>Ramen Paul</h3>
                   <div className={styles.description}>
-                    Ramen Paul, my music teacher, inspired my journey into web
-                    development. I crafted his initial website, showcasing his
-                    musical expertise. Motivated to enhance my skills, I learned
-                    React and subsequently revamped his site using Next.js. Now,
-                    it not only reflects his artistry but also highlights my
-                    growth as a developer, harmonizing technology and creativity
-                    to amplify his online presence.
+                    Ramen Paul, my music teacher, sparked my web development
+                    journey. I built his first site, showcasing his expertise.
+                    Learning React, I revamped it with Next.js, blending tech
+                    and creativity, enriching his online presence.
                   </div>
                   <button>
                     <Link href="https://www.ramenpaul.com" target="_blank">
@@ -294,34 +293,37 @@ export default function Home() {
               </div>
               <div className={styles.project}>
                 <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                  <Image
+                    src="/img/projects/mpaa.png"
+                    alt="MPAA Performing Arts Academy"
+                    width={1920}
+                    height={1080}
                   />
                 </div>
                 <div className={styles.content}>
                   <p className={styles.type}>Wordpress, VPS </p>
-                  <h3>MPAA - Performing Arts Academy</h3>
+                  <h3>MPAA Performing Arts Academy</h3>
 
                   <div className={styles.description}>
-                    Collaborating with Sahil Bansal, I tackled my first global
-                    project—creating the MPAA - Performing Arts Academy website
-                    using WordPress. Highlighting a BA (Hons) Degree in Musical
-                    Theatre Performance with impressive employment outcomes, the
-                    site faced challenges like malware attacks. I gained skills
-                    in VPS, mail setup, and recovery. Now, I handle monthly
-                    maintenance, while Sahil Bansal manages marketing and ads.
+                    Teaming with Sahil Bansal, we launched the MPAA - Performing
+                    Arts Academy site on WordPress. I addressed malware,
+                    mastered VPS, mail setup, and recovery. Now, I manage
+                    maintenance while Sahil handles marketing.
                   </div>
                   <button>
-                    <Link href="https://mpaa.ac.uk/">Visit</Link>
+                    <Link href="https://mpaa.ac.uk/" target="_blank">
+                      Visit
+                    </Link>
                   </button>
                 </div>
               </div>
               <div className={styles.project}>
                 <div className={styles.imgContainer}>
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
+                  <Image
+                    src="/img/projects/rainbow.png"
+                    alt="rainbow consultancy"
+                    width={1920}
+                    height={1080}
                   />
                 </div>
                 <div className={styles.content}>
@@ -342,11 +344,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={styles.more}>
+            {/* <div className={styles.more}>
               <button>
                 <Link href="/projects">More Projects</Link>
               </button>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -388,7 +390,7 @@ export default function Home() {
               </p>
 
               <div className={styles.btn}>
-                <Link href="#" className={styles.primaryBtn}>
+                <Link href="tel:+919899742615" className={styles.primaryBtn}>
                   Say Hello!
                 </Link>
               </div>
@@ -441,11 +443,11 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.logos}>
-              <img src="/img/logo.svg" />
-              <img src="/img/logo.svg" />
-              <img src="/img/logo.svg" />
-              <img src="/img/logo.svg" />
-              <img src="/img/logo.svg" />
+              <img src="/img/client-logo/mpaa-logo.svg" />
+              <img src="/img/client-logo/nlp-logo.jpg" />
+              <img src="/img/client-logo/oxsys-logo.svg" />
+              <img src="/img/client-logo/pmsangrahalayalogo.svg" />
+              <img src="/img/client-logo/lifeamuses-logo.jpg" />
             </div>
           </div>
         </section>

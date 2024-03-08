@@ -17,7 +17,6 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   keywords: ['Dilipmaurya', 'curiousdilip', 'mauryaji'],
   authors: [{ name: 'Dilip Kumar', url: 'https://www.dilipmaurya.in' }],
-  // colorScheme: 'black',
   formatDetection: {
     email: false,
     address: false,
