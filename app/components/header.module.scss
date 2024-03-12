@@ -6,6 +6,7 @@
   max-width: 1230px;
   margin: 0 auto;
   background-color: #fff;
+
   @media (max-width: 768px) {
     padding: 20px;
   }
@@ -15,6 +16,26 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    .dLogo {
+      display: block;
+    }
+
+    .mbLogo {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .dLogo {
+        display: none;
+      }
+
+      .mbLogo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+    }
   }
 
   .toggleButton {
@@ -25,6 +46,10 @@
   .navLinks {
     display: flex;
     list-style-type: none;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
 
     li {
       padding: 12px 24px;
@@ -47,39 +72,39 @@
     }
   }
 
-  @media (max-width: 768px) {
-    .toggleButton {
-      display: block;
-    }
+  // @media (max-width: 768px) {
+  //   .toggleButton {
+  //     display: block;
+  //   }
 
-    .navLinks {
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 99px;
-      left: 0;
-      background-color: #eee;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.5s ease-in-out;
-      transform: translateX(-100%);
+  //   .navLinks {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     position: absolute;
+  //     top: 99px;
+  //     left: 0;
+  //     background-color: #eee;
+  //     width: 100%;
+  //     padding: 0;
+  //     margin: 0;
+  //     opacity: 0;
+  //     visibility: hidden;
+  //     transition: all 0.5s ease-in-out;
+  //     transform: translateX(-100%);
 
-      &.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
+  //     &.show {
+  //       opacity: 1;
+  //       visibility: visible;
+  //       transform: translateY(0);
+  //     }
 
-      li {
-        margin: 0.5rem 0;
-      }
+  //     li {
+  //       margin: 0.5rem 0;
+  //     }
 
-      a {
-        margin: 1rem 0;
-      }
-    }
-  }
+  //     a {
+  //       margin: 1rem 0;
+  //     }
+  //   }
+  // }
 }

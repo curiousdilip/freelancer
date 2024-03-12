@@ -13,12 +13,21 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarBrand}>
-        <Link href="/">
+        <Link href="/" className={styles.dLogo}>
           <Image
             src="/img/logo.svg"
             width={208}
             height={56}
             alt="Logo"
+            priority
+          />
+        </Link>
+        <Link href="/" className={styles.mbLogo}>
+          <Image
+            src="/img/logo.svg"
+            width={208}
+            height={56}
+            alt="Mobile Logo"
             priority
           />
         </Link>
@@ -41,9 +50,6 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="#client">Clients</Link>
-        </li>
-        <li>
-          <Link href="#testimonial">Testimonials</Link>
         </li>
 
         <Link href="#contact" className={styles.primaryBtn}>

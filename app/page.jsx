@@ -632,10 +632,18 @@ export default function Home() {
                 />
                 <br />
                 <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone*"
+                  maxLength="10"
+                />
+                <br />
+                <input
                   type="text"
                   id="location"
                   name="location"
-                  placeholder="Location"
+                  placeholder="Location*"
                   maxLength="45"
                 />
                 <br />
@@ -663,7 +671,7 @@ export default function Home() {
                   name="message"
                   id="message"
                   cols="30"
-                  rows="3"
+                  rows="2"
                   placeholder="Message*"
                   required
                   maxLength="100"

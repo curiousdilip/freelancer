@@ -6,39 +6,8 @@ export default function Footer() {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.footerBox}>
-            <div className={styles.logo}>
-              <a href="/">
-                {" "}
-                <img src="/img/logo-white.svg" alt="" />
-              </a>
-            </div>
-            <div className={styles.nav}>
-              <ul>
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="#about">About</Link>
-                </li>
-                <li>
-                  <Link href="#process">Process</Link>
-                </li>
-                <li>
-                  <Link href="#portfolio">Portfolio</Link>
-                </li>
-                <li>
-                  <Link href="#client">Clients</Link>
-                </li>
-                <li>
-                  <Link href="#testimonial">Testimonials</Link>
-                </li>
-                <li>
-                  <Link href="#contact">Contact</Link>
-                </li>
-              </ul>
-            </div>
             <div className={styles.copyright}>
-              <p>Copyright 2024 © www.dilipmaurya.in</p>
+              <p>Designed by <a href="https://www.figma.com/community/file/1170206889562959306" target="_blank">Templatecookie</a> & Developed by <a href="https://www.dilipmaurya.in" target="_blank">Dilip Kumar Maurya</a></p>
             </div>
           </div>
         </div>

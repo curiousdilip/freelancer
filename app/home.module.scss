@@ -995,6 +995,16 @@ main {
           margin-bottom: 24px;
         }
 
+        input[type="tel"] {
+          width: 100%;
+          font-size: 18px;
+          color: #697484;
+          border: none;
+          border-bottom: 1.5px solid #e6e8eb;
+          padding-bottom: 14px;
+          margin-bottom: 24px;
+        }
+
         input[type="submit"] {
           font-size: 18px;
           color: #fff;
@@ -1002,7 +1012,7 @@ main {
           border: 1px solid #a53dff;
           background-color: #a53dff;
           padding: 12px 24px;
-          margin-top: 50px;
+          // margin-top: 50px;
           border-radius: 4px;
 
           @media (max-width: 768px) {

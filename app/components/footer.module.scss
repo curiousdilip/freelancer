@@ -17,37 +17,16 @@
     .footerBox {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-
-      @media (max-width: 768px) {
-        display: block;
-        text-align: center;
-      }
-
-      .nav {
-        display: flex;
-
-        ul {
-          list-style-type: none;
-          display: flex;
-
-          @media (max-width: 768px) {
-            display: block;
-          }
-
-          li {
-            padding: 12px;
-
-            a {
-              text-decoration: none;
-              color: #f0f1f3;
-            }
-          }
-        }
-      }
+      justify-content: center;
 
       .copyright {
         p {
+          color: #fff;
+          text-align: center;
+          line-height: 1.6;
+        }
+
+        a {
           color: #fff;
         }
       }
