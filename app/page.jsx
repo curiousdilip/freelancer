@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 import Image from "next/image";
 import Blog from "./components/blog";
 import Testimonial from "./components/testimonial";
-import HeroAnimation from "./components/player";
+
 export default function Home() {
   return (
     <>
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <div className={styles.col}>
                 <div className={styles.imgContainer}>
-                  <HeroAnimation />
+                  <Image src="/img/website-hero-image.svg" width={800} height={461} alt="hero image" />
                 </div>
               </div>
             </div>
