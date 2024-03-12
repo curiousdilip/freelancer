@@ -81,7 +81,7 @@ main {
 
               // border-radius: 6px;
 
-              h3 {
+              h2 {
                 font-size: 32px;
                 font-weight: 500;
                 color: #424e60;
@@ -116,7 +116,7 @@ main {
               // border-radius: 6px;
               background-color: #a53dff;
 
-              h3,
+              h2,
               p {
                 color: #fff;
               }
@@ -129,10 +129,19 @@ main {
 
           .imgContainer {
             text-align: right;
-            width: 90%;
-            box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
-            border-radius: 25px;
+            width: 80%;
+            // box-shadow: 0px 24px 116px 0 rgba(43, 56, 76, 0.09);
+            // border-radius: 25px;
             overflow: hidden;
+
+            div {
+              svg {
+                height: 400px;
+              }
+              svg:last-child {
+                display: none;
+              }
+            }
 
             @media (max-width: 768px) {
               margin-top: 20px;
@@ -725,7 +734,7 @@ main {
       display: flex;
       justify-content: center;
       gap: 24px;
-      padding: 80px 0;
+      padding-top: 80px;
 
       @media (max-width: 768px) {
         display: block;
@@ -735,6 +744,7 @@ main {
 
       img {
         height: 56px;
+        object-fit: contain;
         @media (max-width: 768px) {
           margin: 10px;
         }
@@ -807,7 +817,7 @@ main {
 
 .contact {
   position: relative;
-  padding-top: 100px;
+  // padding-top: 100px;
   margin-bottom: -60px;
   z-index: 30;
 

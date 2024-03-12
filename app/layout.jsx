@@ -1,52 +1,53 @@
 import "./global.scss";
 import { Work_Sans } from "next/font/google";
-import Header from "./componensts/header";
-import Footer from "./componensts/footer";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: {
     default: "Dilip Kumar | Web Developer",
-    template: "%s | Dilip Kumar Maurya"
+    template: "%s | Dilip Kumar Maurya",
   },
   icons: {
-    icon: '/img/favicon.svg',
+    icon: "/img/favicon.svg",
   },
-  description: "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+  description:
+    "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
   robots: "follow, index",
-  applicationName: 'Dilip Kumar ',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Dilipmaurya', 'curiousdilip', 'mauryaji'],
-  authors: [{ name: 'Dilip Kumar', url: 'https://www.dilipmaurya.in' }],
+  applicationName: "Dilip Kumar ",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Dilipmaurya", "curiousdilip", "mauryaji"],
+  authors: [{ name: "Dilip Kumar", url: "https://www.dilipmaurya.in" }],
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.dilipmaurya.in'),
+  metadataBase: new URL("https://www.dilipmaurya.in"),
   alternates: {
-    canonical: 'https://www.dilipmaurya.in',
-    '/projects': 'https://www.dilipmaurya.in/projects',
+    canonical: "https://www.dilipmaurya.in",
+    "/projects": "https://www.dilipmaurya.in/projects",
   },
   openGraph: {
     images: {
-      default: '/img/profilecardimg.jpeg',
-      template: '%s'
+      default: "/img/profilecardimg.jpeg",
+      template: "%s",
     },
     description: {
-      default: 'Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.',
-      template: "%s"
+      default:
+        "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+      template: "%s",
     },
     title: {
-      default: 'Dilip Kumar | Web Developer',
-      template: "%s | Dilip Kumar Maurya"
+      default: "Dilip Kumar | Web Developer",
+      template: "%s | Dilip Kumar Maurya",
     },
-    url: 'https://www.dilipmaurya.in',
-    siteName: 'Dilip Kumar | Web Developer',
-    locale: 'en_US',
-    type: 'website',
+    url: "https://www.dilipmaurya.in",
+    siteName: "Dilip Kumar | Web Developer",
+    locale: "en_US",
+    type: "website",
   },
-
-}
+};
 
 const worksans = Work_Sans({
   subsets: ["latin"],

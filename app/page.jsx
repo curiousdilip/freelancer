@@ -1,8 +1,9 @@
 import Link from "next/link";
 import styles from "./home.module.scss";
 import Image from "next/image";
-import Blog from "./componensts/blog";
-import Testimonial from "./componensts/testimonial";
+import Blog from "./components/blog";
+import Testimonial from "./components/testimonial";
+import HeroAnimation from "./components/player";
 export default function Home() {
   return (
     <>
@@ -36,30 +37,21 @@ export default function Home() {
                 </div>
                 <div className={styles.stats}>
                   <div className={styles.stat}>
-                    <h3>2+</h3>
+                    <h2>2+</h2>
                     <p>Experience</p>
                   </div>
                   <div className={styles.stat}>
-                    <h3>10+</h3>
+                    <h2>10+</h2>
                     <p>Project Completed</p>
                   </div>
                   <div className={styles.stat}>
-                    <h3>5+</h3> <p>Happy Clients</p>
+                    <h2>5+</h2> <p>Happy Clients</p>
                   </div>
                 </div>
               </div>
               <div className={styles.col}>
                 <div className={styles.imgContainer}>
-                  {/* <Image
-                    src="/img/sample-img.jpeg"
-                    width={636}
-                    height={536}
-                    alt="sample image"
-                  /> */}
-                  <img
-                    src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                  />{" "}
+                  <HeroAnimation />
                 </div>
               </div>
             </div>
@@ -443,11 +435,36 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.logos}>
-              <img src="/img/client-logo/mpaa-logo.svg" />
-              <img src="/img/client-logo/nlp-logo.jpg" />
-              <img src="/img/client-logo/oxsys-logo.svg" />
-              <img src="/img/client-logo/pmsangrahalayalogo.svg" />
-              <img src="/img/client-logo/lifeamuses-logo.jpg" />
+              <Image
+                src="/img/client-logo/mpaa-logo.svg"
+                alt="MPAA Performing Arts Academy"
+                width={100}
+                height={56}
+              />
+              <Image
+                src="/img/client-logo/nlp-logo.jpg"
+                alt="NLP Minerals Pvt Ltd"
+                width={100}
+                height={56}
+              />
+              <Image
+                src="/img/client-logo/oxsys-logo.svg"
+                alt="OXSYS"
+                width={100}
+                height={56}
+              />
+              <Image
+                src="/img/client-logo/pmsangrahalayalogo.svg"
+                alt="Pradhanmantri Sangrahalaya"
+                width={100}
+                height={56}
+              />
+              <Image
+                src="/img/client-logo/lifeamuses-logo.jpg"
+                alt="Pradhanmantri Sangrahalaya"
+                width={100}
+                height={56}
+              />
             </div>
           </div>
         </section>
