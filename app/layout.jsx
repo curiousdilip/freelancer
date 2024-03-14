@@ -33,21 +33,13 @@ export const metadata = {
       default: "/img/profilecardimg.jpeg",
       template: "%s",
     },
-    description: {
-      default:
-        "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
-      template: "%s",
-    },
-    title: {
-      default: "Dilip Kumar | Web Developer",
-      template: "%s | Dilip Kumar Maurya",
-    },
     url: "https://www.dilipmaurya.in",
     siteName: "Dilip Kumar | Web Developer",
     locale: "en_US",
     type: "website",
   },
 };
+
 
 const worksans = Work_Sans({
   subsets: ["latin"],

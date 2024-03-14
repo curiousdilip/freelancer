@@ -985,6 +985,16 @@ main {
           margin-bottom: 24px;
         }
 
+        input[type="number"] {
+          width: 100%;
+          font-size: 18px;
+          color: #697484;
+          border: none;
+          border-bottom: 1.5px solid #e6e8eb;
+          padding-bottom: 14px;
+          margin-bottom: 24px;
+        }
+
         input[type="tel"] {
           width: 100%;
           font-size: 18px;

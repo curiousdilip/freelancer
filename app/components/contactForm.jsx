@@ -56,26 +56,28 @@ const ContactForm = ({ onFormSubmit }) => {
                         required
                         maxLength="45"
                     />
-                    <br />
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Phone*"
-                        maxLength="10"
-                    />
-                    <br />
-                    <input
-                        type="text"
-                        id="location"
-                        name="location"
-                        placeholder="Location*"
-                        maxLength="45"
-                    />
-                    <br />
                     <div className={styles.bsub}>
+                        <br />
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Phone*"
+                            maxLength="10"
+                        />
+                        <br />
                         <input
                             type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Location*"
+                            maxLength="45"
+                        />
+                        <br />
+                    </div>
+                    <div className={styles.bsub}>
+                        <input
+                            type="number"
                             id="budget"
                             name="budget"
                             placeholder="Budget*"
