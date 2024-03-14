@@ -3,6 +3,7 @@ import styles from "./home.module.scss";
 import Image from "next/image";
 import Blog from "./components/blog";
 import Testimonial from "./components/testimonial";
+import ContactForm from "./components/contactForm";
 
 export default function Home() {
   return (
@@ -608,73 +609,8 @@ export default function Home() {
             </div>
             <div className={styles.form}>
               <p>Fill out the form below to get started</p>
-              <form>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Name*"
-                  required
-                  maxLength="45"
-                />
-                <br />{" "}
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email*"
-                  required
-                  maxLength="45"
-                />
-                <br />
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="Phone*"
-                  maxLength="10"
-                />
-                <br />
-                <input
-                  type="text"
-                  id="location"
-                  name="location"
-                  placeholder="Location*"
-                  maxLength="45"
-                />
-                <br />
-                <div className={styles.bsub}>
-                  <input
-                    type="text"
-                    id="budget"
-                    name="budget"
-                    placeholder="Budget*"
-                    required
-                    maxLength="10"
-                  />
-                  <br />{" "}
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Subject*"
-                    required
-                    maxLength="45"
-                  />
-                  <br />
-                </div>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="2"
-                  placeholder="Message*"
-                  required
-                  maxLength="100"
-                ></textarea>
-                <input type="submit" value="Submit" />
-                <br />
-              </form>
+
+              <ContactForm />
             </div>
           </div>
         </section>
