@@ -259,35 +259,33 @@ main {
       display: block;
       margin-top: 32px;
 
-      button {
+
+
+      a {
         padding: 12px 24px;
         border-radius: 4px;
         background-color: #a53dff;
         border: 1px solid #a53dff;
         margin-right: 16px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
 
         @media (max-width: 768px) {
           padding: 12px;
         }
-
-        a {
-          text-decoration: none;
-          font-weight: 500;
-          color: #fff;
-        }
       }
 
-      button:last-child {
+
+      a:last-child {
         padding: 12px 24px;
         border-radius: 4px;
         background-color: #fff;
         border: 1px solid #a53dff;
         margin-right: 16px;
+        font-weight: 500;
+        color: #a53dff;
 
-        a {
-          font-weight: 500;
-          color: #a53dff;
-        }
       }
     }
   }
@@ -567,26 +565,18 @@ main {
       }
     }
 
-    button {
+    a {
       padding: 12px 24px;
       border-radius: 4px;
       background-color: #a53dff;
       margin-top: 20px;
       border: none;
+      font-weight: 500;
+      color: #fff;
+      text-decoration: none;
 
       @media (max-width: 768px) {
         margin-top: 0;
-      }
-
-      a {
-        font-weight: 500;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      i {
-        margin-left: 12px;
-        color: #fff;
       }
     }
   }

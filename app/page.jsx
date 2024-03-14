@@ -143,12 +143,11 @@ export default function Home() {
                   challenges of the ever-evolving digital landscape.
                 </p>
                 <div className={styles.ctaBtns}>
-                  <button>
-                    <Link href="#portfolio">My Projects</Link>
-                  </button>
-                  <button>
-                    <Link href="#">Download CV</Link>
-                  </button>
+
+                  <Link href="#portfolio">My Projects</Link>
+
+                  <Link href="#">Download CV</Link>
+
                 </div>
               </div>
             </div>
@@ -356,10 +355,7 @@ export default function Home() {
                 Explore ideas, discuss, and shape your project vision together
                 for success. Exciting possibilities await!
               </p>
-              <button>
-                <Link href="tel:+919899742615">Let's Work Together</Link>{" "}
-                <i className="bi bi-arrow-right-short"></i>
-              </button>
+              <Link href="tel:+919899742615">Let's Work Together</Link>
             </div>
           </div>
         </section>
