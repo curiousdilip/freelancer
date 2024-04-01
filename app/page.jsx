@@ -4,6 +4,7 @@ import Image from "next/image";
 import Blog from "./components/blog";
 import Testimonial from "./components/testimonial";
 import ContactForm from "./components/contactForm";
+import { projects } from "./data/projects";
 
 export default function Home() {
   return (
@@ -52,7 +53,12 @@ export default function Home() {
               </div>
               <div className={styles.col}>
                 <div className={styles.imgContainer}>
-                  <Image src="/img/website-hero-image.svg" width={800} height={461} alt="hero image" />
+                  <Image
+                    src="/img/website-hero-image.svg"
+                    width={800}
+                    height={461}
+                    alt="hero image"
+                  />
                 </div>
               </div>
             </div>
@@ -144,11 +150,9 @@ export default function Home() {
                   challenges of the ever-evolving digital landscape.
                 </p>
                 <div className={styles.ctaBtns}>
-
                   <Link href="#portfolio">My Projects</Link>
 
                   <Link href="#">Download CV</Link>
-
                 </div>
               </div>
             </div>
@@ -255,92 +259,42 @@ export default function Home() {
                 functional.
               </p>
             </div>
-            <div className={styles.projects}>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
+            <div className={styles.works}>
+              {projects.slice(0, 3).map((project, index) => (
+                <div className={styles.project} key={index}>
                   <Image
-                    src="/img/projects/ramenpaul.png"
-                    alt="Ramen Sir Website"
-                    width={1920}
-                    height={1080}
+                    src={project.imgSrc}
+                    alt={project.title}
+                    width={394}
+                    height={248}
+                    priority="true"
                   />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>
-                    Nextjs, CI/CD Pipeline, Google Analytics{" "}
-                  </p>
-                  <h3>Ramen Paul</h3>
-                  <div className={styles.description}>
-                    Ramen Paul, my music teacher, sparked my web development
-                    journey. I built his first site, showcasing his expertise.
-                    Learning React, I revamped it with Next.js, blending tech
-                    and creativity, enriching his online presence.
-                  </div>
-                  <button>
-                    <Link href="https://www.ramenpaul.com" target="_blank">
-                      Visit
-                    </Link>
-                  </button>
-                </div>
-              </div>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
-                  <Image
-                    src="/img/projects/mpaa.png"
-                    alt="MPAA Performing Arts Academy"
-                    width={1920}
-                    height={1080}
-                  />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>Wordpress, VPS </p>
-                  <h3>MPAA Performing Arts Academy</h3>
+                  <div className={styles.details}>
+                    {project.tech ? (
+                      <ul className={styles.techStack}>
+                        {project.tech.map((technology, techIndex) => (
+                          <li key={techIndex}>{technology}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    <h3 className={styles.pTitle}>{project.title}</h3>
+                    <p className={styles.description}>{project.description}</p>
 
-                  <div className={styles.description}>
-                    Teaming with Sahil Bansal, we launched the MPAA - Performing
-                    Arts Academy site on WordPress. I addressed malware,
-                    mastered VPS, mail setup, and recovery. Now, I manage
-                    maintenance while Sahil handles marketing.
+                    <a
+                      className={styles.pLink}
+                      href={project.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      See Live
+                    </a>
                   </div>
-                  <button>
-                    <Link href="https://mpaa.ac.uk/" target="_blank">
-                      Visit
-                    </Link>
-                  </button>
                 </div>
-              </div>
-              <div className={styles.project}>
-                <div className={styles.imgContainer}>
-                  <Image
-                    src="/img/projects/rainbow.png"
-                    alt="rainbow consultancy"
-                    width={1920}
-                    height={1080}
-                  />
-                </div>
-                <div className={styles.content}>
-                  <p className={styles.type}>HTML, CSS, JS </p>
-                  <h3>Rainbow Consultancy</h3>
-
-                  <div className={styles.description}>
-                    Rainbow Consultancy is a consortium of independent
-                    professional consultants with a commitment to provide
-                    quality training, evaluation and documentation services to
-                    our clients. I had the chance to make website for them.
-                  </div>
-                  <button>
-                    <Link href="https://rainbowconsultancy.in/" target="_blank">
-                      Visit
-                    </Link>
-                  </button>
-                </div>
-              </div>
+              ))}
             </div>
-            {/* <div className={styles.more}>
-              <button>
-                <Link href="/projects">More Projects</Link>
-              </button>
-            </div> */}
+            <div className={styles.more}>
+              <Link href="/projects">More Projects</Link>
+            </div>
           </div>
         </section>
 
@@ -544,7 +498,6 @@ export default function Home() {
 
               <div className={styles.social}>
                 <div className={styles.box}>
-
                   <Link href="https://www.linkedin.com/in/curiousdilip/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -1,5 +1,5 @@
-#projects {
-  padding: 100px 0;
+.projects {
+  padding-top: 100px;
 
   @media (max-width: 768px) {
     padding: 40px 20px;
@@ -12,7 +12,6 @@
 
   .heading {
     text-align: center;
-
     h2 {
       margin-bottom: 24px;
       color: #132238;
@@ -31,7 +30,7 @@
     }
   }
 
-  .projects {
+  .works {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 70px;
@@ -47,30 +46,26 @@
       overflow: hidden;
       // width: 424px;
       border-radius: 8px;
+      border: 1px solid #e6e8eb;
 
       @media (max-width: 768px) {
         margin-bottom: 20px;
       }
 
-      .imgContainer {
+      img {
         @media (max-width: 768px) {
           height: 220px;
         }
-
+        object-fit: cover;
+        text-align: center;
         height: 248px;
-
-        img {
-          height: 100%;
-          width: 100%;
-        }
       }
 
-      .content {
+      .details {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
 
         padding: 32px;
-        border: 1px solid #e6e8eb;
 
         @media (max-width: 768px) {
           padding: 20px;
@@ -80,13 +75,18 @@
           text-align: center;
         }
 
-        .type {
-          font-size: 12px;
-          font-weight: 500px;
-          color: #87909d;
+        .techStack {
+          list-style-type: none;
+          display: flex;
+          li {
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: 500px;
+            color: #87909d;
+          }
         }
 
-        h3 {
+        .pTitle {
           margin-top: 4px;
           margin-bottom: 12px;
           color: #132238;
@@ -99,22 +99,16 @@
           color: #556070;
         }
 
-        button {
-          padding: 12px 24px;
+        a {
+          display: inline-block;
+          padding: 12px;
           border-radius: 4px;
           background-color: #fff;
           margin-top: 20px;
           border: 1px solid #a53dff;
-
-          a {
-            font-weight: 500;
-            color: #a53dff;
-            text-decoration: none;
-          }
-
-          i {
-            margin-left: 12px;
-          }
+          font-weight: 500;
+          color: #a53dff;
+          text-decoration: none;
         }
       }
     }
