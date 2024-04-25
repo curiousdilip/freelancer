@@ -1,7 +1,6 @@
 main {
   .hero {
     background-color: rgba(196, 245, 233, 0.7);
-
     .container {
       z-index: 30;
       max-width: 1230px;
@@ -23,13 +22,14 @@ main {
         align-items: center;
 
         .col {
-          width: 48%;
+          // width: 48%;
 
           @media (max-width: 768px) {
             width: 100%;
           }
 
           .content {
+            text-align: center;
             h1 {
               font-size: 72px;
               font-weight: 600;
@@ -56,21 +56,22 @@ main {
           }
 
           .stats {
+            justify-content: center;
             margin-top: 80px;
-            background-color: rgba(237, 216, 255, 0.5);
             display: flex;
-            // position: absolute;
-            bottom: 0;
+            gap: 20px;
             border-radius: 6px;
-            border: 1px solid white;
 
             @media (max-width: 768px) {
               margin-top: 20px;
             }
 
             .stat {
+              background-color: rgba(237, 216, 255, 0.5);
+              border-radius: 6px;
+              border: 2px solid white;
               padding: 12px 17px;
-              border-right: 2px solid white;
+              // border-right: 2px solid white;
               text-align: center;
               width: 200px;
               transition: all 0.3s;
@@ -271,6 +272,7 @@ main {
 
         @media (max-width: 768px) {
           padding: 12px;
+          display: inline-block;
         }
       }
 
@@ -447,6 +449,7 @@ main {
       img {
         @media (max-width: 768px) {
           height: 220px;
+          width: 100%;
         }
         object-fit: cover;
         text-align: center;

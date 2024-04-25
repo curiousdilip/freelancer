@@ -15,10 +15,7 @@ export default function Home() {
             <div className={styles.row}>
               <div className={styles.col}>
                 <div className={styles.content}>
-                  <h1>
-                    Hello, I'm <br />
-                    Dilip Kumar
-                  </h1>
+                  <h1>Hello, I'm Dilip Kumar</h1>
                   <p>
                     {" "}
                     I'm a passionate <span>frontend web developer </span>
@@ -51,7 +48,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className={styles.col}>
+              {/* <div className={styles.col}>
                 <div className={styles.imgContainer}>
                   <Image
                     src="/img/website-hero-image.svg"
@@ -60,7 +57,7 @@ export default function Home() {
                     alt="hero image"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

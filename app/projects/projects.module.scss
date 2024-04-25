@@ -55,6 +55,7 @@
       img {
         @media (max-width: 768px) {
           height: 220px;
+          width: 100%;
         }
         object-fit: cover;
         text-align: center;
