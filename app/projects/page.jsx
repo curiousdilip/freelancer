@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../data/projects";
 import styles from "./projects.module.scss";
 import Image from "next/image";
+import Header from "../components/headerLogo";
 
 export const metadata = {
   title: "Projects",
@@ -16,6 +17,7 @@ export const metadata = {
 const Page = () => {
   return (
     <>
+      <Header />
       <section id="projects" className={styles.projects}>
         <div className={styles.container}>
           <div className={styles.heading}>

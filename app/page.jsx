@@ -5,10 +5,12 @@ import Blog from "./components/blog";
 import Testimonial from "./components/testimonial";
 import ContactForm from "./components/contactForm";
 import { projects } from "./data/projects";
-
+import Header from "./components/header";
+import Footer from "./components/footer";
 export default function Home() {
   return (
     <>
+      <Header />
       <main>
         <section id="hero" className={styles.hero}>
           <div className={styles.container}>
@@ -554,6 +556,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

@@ -52,9 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${worksans.variable}`}>
       <body>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
