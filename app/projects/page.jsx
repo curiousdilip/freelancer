@@ -11,7 +11,11 @@ export const metadata = {
     description:
       "These are the Projects / Works that I was a part and i have developed some of them from scratch ",
     images: "/img/profilecardimg.jpeg",
+    url: "https://www.dilipmaurya.in/projects",
+    siteName: "Projects | Dilip Kumar Maurya",
   },
+  locale: "en_US",
+  type: "website",
 };
 
 const Page = () => {
