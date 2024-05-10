@@ -447,13 +447,13 @@ main {
       }
 
       img {
+        height: 222px;
         @media (max-width: 768px) {
           height: 220px;
           width: 100%;
         }
         object-fit: cover;
         text-align: center;
-        height: 248px;
       }
 
       .details {
@@ -541,6 +541,7 @@ main {
       font-size: 48px;
       font-weight: 600;
       color: #fff;
+      line-height: 1;
 
       @media (max-width: 768px) {
         font-size: 24px;
