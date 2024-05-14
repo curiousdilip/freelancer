@@ -50,6 +50,39 @@ const worksans = Work_Sans({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${worksans.variable}`}>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-96YN1MPY3C"></Script>
+      <Script dangerouslySetInnerHTML={{
+        __html: `    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-96YN1MPY3C');`
+      }}>
+      </Script>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "https://www.dilipmaurya.in/",
+            "name": "Dilip Kumar | Web Developer",
+            "logo": "https://www.dilipmaurya.in/logo-black.svg",
+            "description": "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91 98997 42615",
+              "contactType": "customer service"
+            },
+            "sameAs": [
+              "https://www.facebook.com/curiousdilip",
+              "https://twitter.com/curiousdilip",
+              "https://www.github.com/curiousdilip",
+              "https://www.linkedin.com/in/curiousdilip/",
+            ]
+          })
+        }}
+      />
       <body>
         {children}
       </body>
