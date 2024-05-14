@@ -16,7 +16,6 @@ export const metadata = {
   robots: "follow, index",
   applicationName: "Dilip Kumar ",
   referrer: "origin-when-cross-origin",
-  keywords: ["Dilipmaurya", "curiousdilip", "mauryaji"],
   authors: [{ name: "Dilip Kumar", url: "https://www.dilipmaurya.in" }],
   formatDetection: {
     email: false,
