@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
             "@type": "Organization",
             "url": "https://www.dilipmaurya.in/",
             "name": "Dilip Kumar | Web Developer",
-            "logo": "https://www.dilipmaurya.in/logo-black.svg",
+            "logo": "https://www.dilipmaurya.in/img/logo.svg",
             "description": "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
             "contactPoint": {
               "@type": "ContactPoint",
