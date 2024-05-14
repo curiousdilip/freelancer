@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
             ]
           })
         }}
-      />
+      > </Script>
       <body>
         {children}
       </body>
