@@ -56,7 +56,6 @@ const ContactForm = ({ onFormSubmit }) => {
             maxLength="45"
           />
           <div className={styles.bsub}>
-            <br />
             <input
               type="tel"
               id="phone"
@@ -64,7 +63,6 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="Phone*"
               maxLength="10"
             />
-            <br />
             <input
               type="text"
               id="location"
@@ -72,7 +70,6 @@ const ContactForm = ({ onFormSubmit }) => {
               placeholder="Location*"
               maxLength="45"
             />
-            <br />
           </div>
           <div className={styles.bsub}>
             <input
@@ -83,7 +80,6 @@ const ContactForm = ({ onFormSubmit }) => {
               required
               maxLength="10"
             />
-            <br />{" "}
             <input
               type="text"
               id="subject"
@@ -92,7 +88,6 @@ const ContactForm = ({ onFormSubmit }) => {
               required
               maxLength="45"
             />
-            <br />
           </div>
           <textarea
             name="message"
