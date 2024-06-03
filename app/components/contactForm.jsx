@@ -73,7 +73,7 @@ const ContactForm = ({ onFormSubmit }) => {
           </div>
           <div className={styles.bsub}>
             <input
-              type="number"
+              type="text"
               id="budget"
               name="budget"
               placeholder="Budget*"
