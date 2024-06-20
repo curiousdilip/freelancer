@@ -5,14 +5,14 @@ import Image from "next/image";
 import Header from "../components/headerLogo";
 
 export const metadata = {
-  title: "Projects | Dilip Kumar Maurya",
+  title: "Projects",
   openGraph: {
-    title: "Projects | Dilip Kumar Maurya",
+    title: "Projects",
     description:
       "These are the Projects / Works that I was a part and i have developed some of them from scratch ",
     images: "/img/profilecardimg.jpeg",
     url: "https://www.dilipmaurya.in/projects",
-    siteName: "Projects | Dilip Kumar Maurya",
+    siteName: "Projects",
   },
   locale: "en_US",
   type: "website",
