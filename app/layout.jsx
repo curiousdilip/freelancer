@@ -4,7 +4,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: {
-    default: "Dilip Kumar | Web Developer",
+    default: "Dilip Kumar | Frontend Web Developer",
     template: "%s | Dilip Kumar Maurya",
   },
   icons: {
@@ -65,9 +65,9 @@ export default function RootLayout({ children }) {
             "@context": "http://schema.org",
             "@type": "Organization",
             "url": "https://www.dilipmaurya.in/",
-            "name": "Dilip Kumar | Web Developer",
+            "name": "Dilip Kumar | Frontend Web Developer",
             "logo": "https://www.dilipmaurya.in/img/logo.svg",
-            "description": "Hi my name is Dilip Kumar Maurya and I am a Web developer based in New Delhi, India.",
+            "description": "Hi my name is Dilip Kumar Maurya and I am a Frontend Web developer based in New Delhi, India.",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+91 98997 42615",
