@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "M Variety Beverages",
+    description: `M Variety Enterprises in Kerala, India was started with a passion for innovation and quality, we introduced a unique range of products that would change the way people experience beverages.`,
+    imgSrc: "/img/projects/mvariety.jpg",
+    href: "https://www.mvariety.in/",
+    tech: ["Wordpress", "Elementor"],
+  },
+  {
     title: "Ramen Paul",
     description: `Trained in England (1993) France(1994) and U.S. (1995-98) Teaching music since last 15 years,authorized teacher of Trinity college, Rock school, Rock and Pop and Royal college, London. `,
     imgSrc: "/img/projects/ramen.jpg",
